@@ -1,0 +1,41 @@
+
+{
+    "productList":[
+        {
+            "id":1 , 
+            "name":"HeadPhone1",
+            "img":"../../../public/images (2).jpg",
+            "explain":"lorem epision sakhtegi...",
+            "price":"200$"
+            
+
+        },
+          {
+            "id":2 , 
+            "name":"HeadPhone2",
+            "img":"../public/images (1).jpg",
+            "explain":"lorem epision sakhtegi...",
+            "price":"320$"
+            
+
+        },  
+        {
+            "id":3 , 
+            "name":"HeadPhone3",
+            "img":"../public/images (2).jpg",
+            "explain":"lorem epision sakhtegi...",
+            "price":"560$"
+            
+
+        },
+             {
+            "id":4 , 
+            "name":"HeadPhone4",
+            "img":"../public/images (1).jpg",
+            "explain":"lorem epision sakhtegi...",
+            "price":"890$"
+            
+
+        }
+    ]
+}
