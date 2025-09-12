@@ -10,6 +10,7 @@ const ProductCard = () => {
             setIsAdded(prev =>({
                 ...prev, [id]:false
             }))
+          
         }
         else{
             setIsAdded(prev=>({...prev , [id]:true}))
