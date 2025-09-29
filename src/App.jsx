@@ -7,18 +7,20 @@ import { Link, Outlet } from 'react-router-dom'
 
 function App() {
 
-  const queryClient = new QueryClient()
+ 
 
   return (
-      <QueryClientProvider client={queryClient}>
+     
 
       <div>
       <ProductCard/>
-      <Link to="newProduct">add new</Link>
 
-     </div>
-
-      </QueryClientProvider>
+   <Link className=' text-pink-400 rounded-2xl  p-4 ' to="/newProduct"><button>add New</button></Link>
+     
+   
+      
+       </div>
+  
     
    
  

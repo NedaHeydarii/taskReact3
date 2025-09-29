@@ -5,7 +5,7 @@ import { postProduct } from '../../api/productAllApi/productApi'
 import { productSchema } from '../../validation/productValidation'
 import { useMutation } from '@tanstack/react-query'
 
-const ProductForm = () => {
+const ProductForm = (P) => {
 
 const mutation = useMutation({
     mutationFn:postProduct,
@@ -29,7 +29,7 @@ const mutation = useMutation({
               <ErrorMessage className="text-red-500" name="name" component="p"/>
               </div>
               
-                <Field className="border-2 border-blue-800"  name="image" type="text" placeholder="image URl..."/>
+                <Field className=" p-2 border-2 border-blue-800"  name="image" type="text" placeholder="image URl..."/>
               
                <div>
                  <Field className="p-2.5 border-2 border-blue-800" name="price" type="number" placeholder="price..."/>
@@ -41,7 +41,7 @@ const mutation = useMutation({
                     <ErrorMessage className="text-red-500" name="discount" component="p"/>
                 </div>
             
-              <button type='submit' disabled={mutation.isLoading}> add Product</button>
+              <button type='submit' > add Product</button>
             </Form>        
         
         </Formik>
