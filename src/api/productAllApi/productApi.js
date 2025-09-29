@@ -42,7 +42,7 @@ export const getProductbyId = async (id)=>{
 export const updateProduct = async ({id , ...data})=>{
       console.log(data)
     try{
-        const res = await api.put(`/products/${id}` , data)
+        const res = await api.put(`/products/${id}` ,data)
         return res.data
        
     }

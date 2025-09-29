@@ -2,7 +2,7 @@ import { QueryClient, useMutation, useQuery, useQueryClient } from "@tanstack/re
 import { Form } from "formik"
 import { ErrorMessage, Field, Formik } from "formik"
 import React, { Fragment} from 'react'
-import { data, useLocation, useParams } from "react-router-dom"
+import {  useParams } from "react-router-dom"
 import { getProductbyId, updateProduct } from "../../api/productAllApi/productApi"
 import { productSchema } from "../../validation/productValidation"
 
@@ -12,14 +12,14 @@ const UpdateProduct = () => {
    
       
     const{data , isLoading , isError}=useQuery({queryKey:["Product" , id] , queryFn:()=>getProductbyId(id),})
-    console.log(data)
+   console.log(data)
      const mutation = useMutation({
         mutationFn:updateProduct,
-        onSuccess:(data)=>{alert("product updated..."), queryClient.setQueryData(['product',id],data),queryClient.invalidateQueries(['product'])},
+        onSuccess:(data)=>{alert("product updated..."), queryClient.setQueryData(['product',id],data),queryClient.invalidateQueries(['product']),data},
         onError:()=>{alert("there is a problem...")},    
      })
      if(isLoading){
-        <div>Loading....</div>
+       return <div >Loading....</div>
      }
 
   return (

@@ -25,19 +25,19 @@ const mutation = useMutation({
         
                <Form className="border-2 flex gap-3 p-4">
              
-              <div>  <Field className=" p-2.5 border-2 border-blue-800"  name="name" type="text" placeholder="productName..." />
+              <div>  <Field className=" p-2.5 border-2 border-pink-800"  name="name" type="text" placeholder="productName..." />
               <ErrorMessage className="text-red-500" name="name" component="p"/>
               </div>
               
-                <Field className=" p-2 border-2 border-blue-800"  name="image" type="text" placeholder="image URl..."/>
+                <Field className=" p-2 border-2 border-pink-800"  name="image" type="text" placeholder="image URl..."/>
               
                <div>
-                 <Field className="p-2.5 border-2 border-blue-800" name="price" type="number" placeholder="price..."/>
+                 <Field className="p-2.5 border-2 border-pink-800" name="price" type="number" placeholder="price..."/>
                 <ErrorMessage  className="text-red-500" name="price" component="p"/>   
                </div>
              
                 <div>
-                    <Field  className=" p-2.5 border-2 border-blue-800"name="discount" type="number" placeholder="discount..."/>
+                    <Field  className=" p-2.5 border-2 border-pink-800"name="discount" type="number" placeholder="discount..."/>
                     <ErrorMessage className="text-red-500" name="discount" component="p"/>
                 </div>
             
