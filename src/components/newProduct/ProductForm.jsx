@@ -1,11 +1,11 @@
 import { ErrorMessage, Field, Formik } from "formik"
 import React, { Fragment} from 'react'
 import { Form } from "formik"
-import { postProduct } from '../../api/productAllApi/productApi'
-import { productSchema } from '../../validation/productValidation'
+import { postProduct } from '../../api/productAllApi/productApi.js'
+import { productSchema } from '../../validation/productValidation.js'
 import { useMutation } from '@tanstack/react-query'
 
-const ProductForm = (P) => {
+const ProductForm = () => {
 
 const mutation = useMutation({
     mutationFn:postProduct,

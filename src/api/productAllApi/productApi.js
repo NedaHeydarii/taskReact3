@@ -1,5 +1,5 @@
 import React from 'react'
-import {api} from "../interceptor"
+import {api} from "../interceptor.js"
 
 export const getProduct = async () =>{
     try{

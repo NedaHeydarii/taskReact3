@@ -1,8 +1,8 @@
 
 import { useMutation, useQuery} from "@tanstack/react-query"
-import { deleteProduct, getProduct } from '../../api/productAllApi/productApi'
+import { deleteProduct, getProduct } from '../../api/productAllApi/productApi.js'
 import { Link } from 'react-router-dom'
-import { ProductForm } from '../newProduct/ProductForm'
+import { ProductForm } from '../newProduct/ProductForm.jsx'
 
 const ProductCard = () => {
     const{data , isLoading , isError} = useQuery({queryKey:["product"], queryFn:getProduct})

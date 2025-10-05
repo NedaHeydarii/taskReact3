@@ -3,8 +3,8 @@ import { Form } from "formik"
 import { ErrorMessage, Field, Formik } from "formik"
 import React, { Fragment} from 'react'
 import {  useParams } from "react-router-dom"
-import { getProductbyId, updateProduct } from "../../api/productAllApi/productApi"
-import { productSchema } from "../../validation/productValidation"
+import { getProductbyId, updateProduct } from "../../api/productAllApi/productApi.js"
+import { productSchema } from "../../validation/productValidation.js"
 
 const UpdateProduct = () => {
     const {id} = useParams()
@@ -25,7 +25,7 @@ const UpdateProduct = () => {
   return (
     <div>
             <Fragment>
-                  <h1>Edit your Product:</h1>
+                  <h1>Edittt your Product:</h1>
                         <Formik initialValues={{
                             name:data?.name,
                              image:data?.imageUrl , 

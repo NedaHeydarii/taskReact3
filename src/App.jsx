@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { ProductCard } from './components/productCard/ProductCard'
+import { ProductCard } from './components/productCard/ProductCard.jsx'
  import { QueryClientProvider ,QueryClient  } from '@tanstack/react-query'
-import { ProductForm } from './components/newProduct/ProductForm'
+import { ProductForm } from './components/newProduct/ProductForm.jsx'
 import { Link, Outlet } from 'react-router-dom'
 
 
