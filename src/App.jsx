@@ -15,7 +15,7 @@ function App() {
       <div>
       <ProductCard/>
 
-   <Link className=' text-pink-400 rounded-2xl  p-4 ' to="/newProduct"><button>add New</button></Link>
+   <Link className=' text-pink-400 rounded-2xl  p-4 ' to="/newProduct"><button>add New product</button></Link>
      
    
       
